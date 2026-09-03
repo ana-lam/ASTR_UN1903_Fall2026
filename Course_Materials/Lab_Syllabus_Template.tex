@@ -1,0 +1,215 @@
+\documentclass[11pt]{article}
+\usepackage[includeheadfoot, top=1.0in, bottom=1.0in, hmargin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{newtxtext,newtxmath}
+\pagestyle{fancy}
+\usepackage{setspace}
+\usepackage{tabularx}
+
+
+\lhead{Astronomy Lab I}
+\rhead{Fall 2026}
+\lfoot{[Insert Name]}
+\rfoot{[Insert section day \& time]}
+\cfoot{\thepage}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%% INTRO %%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\LARGE{ASTR UN 1903: Lab I -- Section 00X} \\ \medskip \Large{Syllabus}\\ 
+\end{center}
+
+\noindent
+\textbf{Instructor:} [Insert name], \textit{[Insert PGPs]} ([Insert email])\\
+\textbf{Office:} Pupin [Room number] (desk closest to the door; office hours by appointment)\\ 
+\textbf{Time:} {[Day], [Time]} \\
+\textbf{Location:} {Astronomy Library, Pupin 1402} \\
+\textbf{Class Website:} {\href{https://courseworks2.columbia.edu/courses/200554}{[Insert courseworks link]}} \footnote{\textit{ Potential concerns regarding a specific lab, emergencies, or inclement weather concerns, will be notified through Courseworks.}}
+
+\section*{Course Overview}
+
+Welcome to Astronomy Lab I! For thousands of years, no matter where on the planet humanity has resided, people have looked up at the stars. This is one of many things that we all have in common: the same moon and stars you see from Columbia's campus are the same that your favorite historical figure or pop star has seen. 
+
+While we won't cover everything that pertains to studying the cosmos, this course will be an introduction to working with and understanding scientific data and astronomical concepts, no previous astronomy knowledge needed. Whether you are confident with STEM concepts or struggle with numbers, my hope is that this class will expand your comfort zone and help you appreciate astronomy as much as I do.
+
+%%%%%%%%%%%%%%%%%%%%%%% OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Course Objectives}
+This class corresponds to select topics covered in the \textit{Stars and Atoms}, \textit{Earth, Moon, and Planets}, and \textit{Galaxies and Cosmology} courses.  By the end of this course, you should be able to:
+\begin{itemize}
+    \item Identify and understand basic astronomical events
+    \item Read, create, and interpret basic scientific graphs
+     \item Apply basic mathematical and scientific concepts to real-life scenarios
+    \item Identify existing gaps in knowledge to form research questions
+    \item Use critical thinking to evaluate the strength and quality of arguments, as well as possible biases
+    \item Recognize the important of scientific literacy and identify reliable scientific sources from both a general and professional perspective
+    \item Understand the core concepts of how astronomy research is produced and published (i.e., scientific process and peer-review)
+    \item Clearly and efficiently communicate in both verbal and written formats
+    %\item Quantify astronomical phenomena using scientific units
+    %\item Critically evaluate quantitative results using knowledge from the broader scientific context
+    %\item Represent and interpret data using graphs, plots, and equations
+    %\item Enumerate the possible sources of error in a measurement and quantify the uncertainty on that measurement
+    %\item Use data and the scientific process to critically evaluate the quality of arguments
+    %\item Identify existing gaps in student knowledge to form a research question
+    %\item Propose a method for answering an open-ended research question, including the procedure for gathering data
+    %\item Synthesize information to generate a model of astronomical phenomena
+    %\item Clearly communicate methodology and results in both written and verbal formats using a logical flow
+    %\item Recognize the importance of scientific literacy
+    %\item See yourself as capable of applying scientific reasoning in everyday life
+\end{itemize}
+ 
+\noindent There will be 10 labs throughout the semester, one week for make-up labs, and one week each for creating and presenting final presentations on a topic of your choice. 
+
+%%%%%%%%%%%%%%%%%%%%%%% EXPECTATIONS %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Expectations}
+
+\subsection*{You should expect me to:}
+
+\begin{itemize}
+% \item \textbf{Arrive 5 minutes early and have labs prepared.} If there are potential concerns regarding a specific lab, emergencies, or inclement weather concerns, I will notify you via Courseworks as soon as I can. 
+\item \textbf{Assign no extra work outside of labs.} You can use additional time outside of class to improve your write-ups and final presentations (before the deadline), and I am happy to provide you with supplementary material on your request, but neither will be required. 
+\item \textbf{Return graded labs \& feedback in a timely manner.} If all labs are turned in by the due date, I will have them graded with feedback by the next class session, no later than EOD Friday of the next class session week.
+\item \textbf{Provide transparency regarding grading.} If you lose points, I will provide specific feedback as to why, allowing you to improve and show the reasoning behind why a specific grade assigned.
+\item \textbf{Respond to all communications in a timely manner.} I do not guarantee responses outside of business hours (Monday-Friday 9 AM-5 PM, plus our lab session), such as late at night or on weekends, but I will do my best to get back to you within two business days. %For example, if you email me at 9AM on Monday morning, you should expect a response by 9AM the following Wednesday.
+\item \textbf{Respect the ideas and contributions of all students.} Instructors learn just as much from their students! I look forward to seeing how each of you will impact me as an instructor.
+\end{itemize}
+
+\subsection*{What I Expect From You:}
+
+\begin{itemize}
+\item \textbf{Arrive on time and attend class sessions.} If you have extenuating circumstances, let me know. 
+\item \textbf{Complete all labs by the deadline.} While there is no late penalty for labs, please try to turn them in by the assigned date.
+\item \textbf{Put forth your best effort.} I don't expect anybody to be experts in math or science, much less astronomy, but be sure to put genuine effort into the course.
+\item \textbf{Respect contributions from other students.} There are no stupid questions, and working with your peers is essential to completing this lab.
+\item \textbf{Communicate with me if any issues arise.} Please let me know ASAP if problems within the course come up. I am happy to work with you and find the best solution, or connect you with people who can.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%% MATERIALS %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Lab Materials}
+ 
+The only specific materials for this lab will be what is necessary for you to fill out your write-up and log your results. I will not provide paper copies of the lab. This may consist of:
+ 
+\begin{itemize}
+\item \textbf{Lab notebook/printed copy and writing utensils:} This can be a bound notebook or printed copy of the lab, which will be posted to Courseworks prior to class (at least 24 hours before, where possible). Note that any labs requiring the creation of charts or plots may be more difficult with pencil and paper.
+\item \textbf{Tablet/Laptop computer:} Laptops will be a necessity for many of the labs. Please ensure your device is charged and ready to use before class. A limited number of laptops will be available for students who don't have their own - if you will need one, please let me know before class if possible. Outlets are available throughout Pupin 1402. \\
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%% GRADING %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Grading}
+
+\subsection*{Lab Write-ups}
+
+Each lab will clearly denote what you should record in your write-ups for each lab. Lab responses can be recorded in either a bound physical notebook or in an electronic document. You may submit your work either as a \textbf{PDF} to Courseworks (\textit{strongly preferred}), or hand in your lab notebook to the instructor at the end of class, to be returned at beginning of the following lab. If you need to turn in a paper copy of your lab, please visit my office; emails ahead of time if you will be doing so are strongly encouraged to ensure I am there to receive your submission. All submissions will be due by midnight on the day following the lab ([Insert date \& time]). \\
+
+All labs should be completed in groups. Even though you will be working with other people, each of you should keep your own records and submit a unique write-up. The entire goal of the write-ups is to explain to the instructor \textit{what} you did during the lab, \textit{how} you did it, and \textit{why} you did it --- I should be able to see the specific reasoning behind your work. I am unable to help you understand the material, complete the course objectives, and succeed to the best of your abilities if you simply copy what another person or group has submitted. Being able to explain concepts in your own words is key to understanding. \\
+
+When completing your lab write-up, please be sure to use complete sentences and units where necessary. You don't need to write several paragraphs for each question, but a one or two-word answer will almost never be awarded the maximum amount of points possible. \\
+
+% A general grading rubric for lab write-ups will be posted to Courseworks before the first lab session (6PM EST on 9/11).
+
+
+\subsection*{Participation}
+
+\noindent Collaboration is one of the most important aspects of performing and learning science, so participation is an essential part of this course. Your participation will be graded on two main aspects: (1) your contribution to your classmates and (2) your involvement with the course material. This will be split evenly over the number of class sessions; note that just because there is not a formal lab to complete (such as for presentation prep and final presentations), there will still be a participation grade for these days (12 total). \\
+
+\label{participation1}
+(1) For your participation with your classmates, you will be assessed on your ability to work with others, and if you ask/answer questions in your group. Not coming to class, working alone, or working at home will result in a zero for your in-class participation grade for that day. \\
+
+\label{participation2}
+(2) Your involvement with the course material will be determined by your completion of and answer to a final question at the end of the lab about the day's specific topic and your performance, concerns, or any questions. This question will not be scientific or mathematical in nature; the purpose is simply to have you engage with the course material and so I can have the opportunity to gauge how you are doing over the course of the semester.
+
+\subsection*{Late Policy}
+
+\noindent \textbf{All labs will be due at midnight the day after they are completed in class ([Insert date \& time])}. All labs should be completed in their entirety during the lab session, but this should allow for extra time if you need to finish your write-up or have technology issues. \\
+
+There will not be a specific grade deduction for late labs, but I will not accept labs turned in two weeks after the lab-specific deadline unless there has been prior communication with and approval from me. It is in your best interest to submit them by the deadline. This allows me time to grade them and provide specific feedback before the next lab, allowing you to improve if needed without a significant impact on your grade, and for you to always have an up-to-date grade in the class. \\
+
+Labs turned in \textit{after} the final class session ([Insert date \& time]) will not be graded. 
+
+\smallskip
+
+\subsection*{Final Presentations}
+
+\noindent For the final class session, each student will give a 10-minute presentation on a topic or their choice followed by a 5-minute discussion with the class. A list of topics related to astronomy and science in society will be provided, but you are also welcome to submit your own suggested topics, pending my approval. \\
+
+Multiple students will not be permitted to work on the same topic; be creative! A sign-up sheet for topics will open around [Insert date]. In the case of multiple students wishing to work on the same topic, it will be first-come first-serve on the sign-up sheet. I am happy to help you brainstorm additional ideas, if needed. Students will be provided part of a lab session to work on their presentations, and are welcome to work outside of lab if needed. Students will also be expected to use any extra time after labs are completed towards final projects. \\
+
+\subsection*{Grade Breakdown}
+
+\noindent \textbf{65\%} Lab submissions*
+
+\noindent \textbf{20\%} Final Projects
+
+\noindent \textbf{15\%} Participation \\
+\indent 7.5\% in-class participation (1\ref{participation1}) \\
+\indent 7.5\% material participation (2\ref{participation2}) \\
+
+\noindent *Your lowest lab grade will be dropped when determining your final grade. Please see the grading rubric on Courseworks for details on how labs will be graded. I will always provide comments when grading, and am happy to schedule a one-on-one meeting to discuss grading in more detail.
+
+%%%%%%%%%%%%%%%%%%%%%%% SCHEDULE %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Tentative Schedule}
+
+Lab dates will not change, but the specific lab covered each day is subject to instructor modification. \\
+
+\begin{tabular}{cc}
+    Insert date & No Lab \\ 
+    Insert date & \textbf{Lab 1:} Orders of Magnitude \& Parallax \\ 
+    Insert date & \textbf{Lab 2:} Distance to the Sun \\ 
+    Insert date & \textbf{Lab 3:} How to Think Like an Astronomer \\
+    Insert date & \textbf{Lab 4:} Spectroscopy \\
+    Insert date & \textbf{Lab 5:} Pseudoscience \\ 
+    Insert date & \textbf{Lab 6:} Observing (weather-permitting)**$^{\star}$ \textit{OR} The Moon \& Optics \\ 
+    Insert date & Make-up Lab: Exoplanets \\ 
+    Insert date & \textbf{Lab 7:} Stars \& Stellar Evolution \\ 
+    Insert date & \textbf{Lab 8:} Observing \textit{OR} Jupiter's Moons \& Indoor Telescope \\
+    Insert date & \textbf{Lab 9:}  Galaxy Classification \\
+    Insert date & \textbf{Lab 10:} Dark Matter\\
+    Insert date & Academic Holiday, No Lab \\
+    %12/04 & \textbf{Lab 10:} Inquiry \\ 
+    Insert date & Final Presentations  \\ 
+\end{tabular} \\
+
+\noindent **The goal will to be do some observing on at least once with either Joseph Tang (jyt2124@columbia.edu) or Ayanna Mann (atm2184@columbia.edu), the observing TAs, if weather allows. If weather does not cooperate on [insert date], we will complete the Moon \& Optics lab instead, and attempt to do observing on [insert date] instead. If weather is good, we will observe as planned. If weather on the second date is \textit{also} bad, we will complete the Jupiter's Moons \& Indoor Telescope lab. \\
+
+\noindent $^{\star}$ I would like to do at least part of our observing on the roof of Pupin. \textbf{However}, the roof is only accessible by one flight of stairs from our classroom, and parts of the roof can be difficult to navigate, \textit{especially} with physical mobility issues. If this is a concern, \textbf{please contact me} ASAP prior to our observing dates ([insert date] or [insert date]) and I will change the observing portion to be more accessible. All concerns will be kept confidential in accordance with University policies.
+
+%%%%%%%%%%%%%%%%%%%%%%% POLICIES %%%%%%%%%%%%%%%%%%%%%%%
+\section*{Policies}
+ 
+\subsection*{Attendance}
+ 
+%By department policy, more than two unexcused (non-medical related) absences will result in automatic failure of the course. 
+
+As mentioned in the Participation section, attendance to every lab session is crucial. You will be expected to attend every class session for the duration of class time. If your group finishes the lab early, you may turn it in and leave early. The class session will not be extended if a student is late. \\
+
+There will be one week for make-up labs. Attendance is not required for this class, but note that it is in the middle of the semester, as our course schedule does not allow for additional make-ups, so attendance is strongly encouraged. Please notify me as soon as possible if extenuating circumstances arise that will affect your attendance so that we can determine the best course of action. \\
+
+\subsection*{Technology}
+
+\noindent A tablet or laptop will often be the best way to complete labs and turn them in. You are encouraged to use your personal devices for this, but please refrain from using them for purposes not related to class (shopping, texting, social media, video streaming, working on other classes, \textit{etc.}) or using your phone during the lab sessions. You will gain the most from this lab if your attention is focused on your classmates and the material, and you will have more time to complete assignments during the lab period.  \\
+
+Please refrain from using AI software, including Large Language Models (LLMs), for any part of the course or assignments, such as lab write-ups. All the labs should not be needed to complete any of the materials in this course. Please acknowledge/credit AI if you do indeed use it.\\
+ 
+\subsection*{Accommodations}
+If you have an identified disability, I encourage you to register with the Office of Disability Services so that I may support you in the best way possible: 
+
+\href{https://health.columbia.edu/services/register-disability-services}{https://health.columbia.edu/services/register-disability-services} 
+
+\href{https://barnard.edu/disability-services}{https://barnard.edu/disability-services}
+ 
+\subsection*{Academic Honesty}
+\href{https://www.college.columbia.edu/academics/academicintegrity}{https://www.college.columbia.edu/academics/academicintegrity}
+ 
+\subsection*{Mandatory reporting}
+Instructors are legally \textbf{required} to report allegations of ``gender based misconduct, discrimination, or harassment" to Columbia's administration. While I am willing to listen and seek out resources (including confidential counselors) on your behalf, I cannot myself provide confidentiality.
+
+\section*{Astronomy events at Columbia:}
+
+\noindent The Department of Astronomy's outreach team is entirely student-run and extremely active. We have various events during the spring and fall semesters, including public lectures and observing sessions. You can see more, including a schedule of events, at \href{http://outreach.astro.columbia.edu/}{http://outreach.astro.columbia.edu/}. 
+
+Interesting in getting involved with the department, having trouble in lab or lecture, want to know more about astronomy, or have any other questions? Please talk to me!
+\vfill
+\textit{* Syllabus adapted from previous graduate teaching assistants in the Department of Astronomy.}
+\end{document}
