@@ -1,0 +1,163 @@
+\documentclass[11pt]{article}
+\usepackage[includeheadfoot, top=1.0in, bottom=1.0in, hmargin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+
+\lhead{Astronomy Lab I}
+\rhead{Fall 2026}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{center}
+\huge{Lab 5: Pseudoscience}\\ \medskip 
+\end{center}
+
+
+\begin{quote}
+``Anti-intellectualism has been a constant thread winding its way through our political and cultural life, nurtured by the false notion that democracy means that 'my ignorance is just as good as your knowledge.' '' \\
+\hfill --- \textbf{Isaac Asimov}
+\end{quote}
+
+\vspace{0.5cm}
+
+\section{Introduction}
+What is science? What is pseudoscience? Why is it important to know the distinction as you navigate today's world?
+\begin{itemize}
+    \item Discuss with your classmates and briefly note your initial thoughts on this topic.
+    \item How would you explain the difference between science and pseudoscience to a friend?
+\end{itemize}
+
+\section{Science}
+A theory, model, prediction, measurement, observation, etc. is ``scientific'' if it has these characteristics:
+\begin{itemize}
+    \item \textbf{Repeatable} (at least in principle, as may be the case with rare events we cannot control)
+    \item \textbf{Objective}
+    \item \textbf{Predictive}
+    \item \textbf{Falsifiable}
+\end{itemize}
+
+Discuss the meaning of these qualities, and describe how Newton's law of gravity fulfills each of these requirements.
+
+\textit{Here's a hint: not only is Newton's law of gravity falsifiable, it has been shown to be false!} (What is our current theory of gravity?)
+
+While we're defining science, what constitutes a scientific theory? A theory is an explanation of some aspect of the natural world that has been repeatedly upheld by rigorous experiment and never falsified. Theories begin as hypotheses: testable predictions that can be corroborated or falsified via the scientific method. Theories are similar to scientific laws, but are usually broader in scope (their explanatory power extends further). For instance, Kepler's First Law states that the orbit of every planet is an ellipse with the Sun at one focus. Clearly, this describes a specific phenomenon, in contrast to, for instance, the Theory of General Relativity, which explains all phenomena associated with gravitation. Both laws and theories are scientific fact. One common misconception is that scientific theories are ``just theories'': that they have yet to become scientific law, or that they are on equal footing with one or more alternative ideas.
+
+\begin{enumerate}
+    \item Can you think of a modern instance in which people have incorrectly argued that a scientific theory is ``just a theory'' with no more validity than an alternative belief?
+\end{enumerate}
+
+\section{Pseudoscience}
+The term 'pseudoscience' refers to any belief, claim, practice, etc. that is presented as being 'scientific', but does not follow the scientific method or possess the characteristics discussed above. There are many examples of pseudoscience in our modern society. A prime example is astrology, the belief that the positions of the sun, moon, planets, and other astronomical objects at the time of one's birth affect one's personality and predict one's future. Pseudoscientific ideas range from the relatively harmless (such as cryptozoology, the belief that creatures like the Loch Ness monster and unicorns exist) to the downright evil (such as ``scientific racism'', the belief that certain races of humans are biologically superior).
+
+\begin{itemize}
+    \item Think of two more examples of pseudoscience not mentioned above. In your lab notebook, explain why they are pseudoscientific.
+\end{itemize}
+
+\section{Horoscopes}
+Those who believe in astrology read their horoscopes: predictions and advice based on the position of astronomical bodies. To examine these claims, I have procured today's horoscopes from 3 sources (see handout). I have removed the ``signs''---the birthdate windows that indicate which horoscope is yours. Simply read through all of the horoscopes and choose the 1 from each set that best describes your day. When we have all chosen, I will tell you the ``answers'', and we will discuss the chances of choosing the correct horoscope by chance.
+
+For reference, these are the signs:
+\begin{itemize}
+    \item \textbf{Aries:} March 21 -- April 19
+    \item \textbf{Taurus:} April 20 -- May 20
+    \item \textbf{Gemini:} May 21 -- June 20
+    \item \textbf{Cancer:} June 21 -- July 22
+    \item \textbf{Leo:} July 23 -- August 22
+    \item \textbf{Virgo:} August 23 -- September 22
+    \item \textbf{Libra:} September 23 -- October 22
+    \item \textbf{Scorpio:} October 23 -- November 21
+    \item \textbf{Sagittarius:} November 22 -- December 19
+    \item \textbf{Capricorn:} December 22 -- January 19
+    \item \textbf{Aquarius:} January 20 -- February 18
+    \item \textbf{Pisces:} February 19 -- March 20
+\end{itemize}
+
+\subsection*{The Binomial Theorem}
+If astrology is correct, we would expect everyone to pick all of the answers that correspond to their sign. But if astrology is incorrect, does that mean everyone will choose all of the wrong horoscopes? Of course not---it is possible to pick the correct horoscope by chance. We can compute the probability that you chose correctly by pure chance any number of times using the Binomial Theorem. This theorem actually applies only when the object chosen is replaced (i.e. if you could choose the same horoscope more than once) but in the limit when the number of choices $N$ is much larger than the number chosen $n$, the result is approximately correct.
+
+The probability ($P$) for $k$ successes from $n$ trials where the probability of success is $p$ is given by:
+\[
+P(k \mid n,p) = \frac{n!}{k!(n-k)!} \, p^k (1-p)^{(n-k)}
+\]
+
+Recall that the $!$ sign means ``factorial'', where $n$ factorial is the product of all integers equal to or less than $n$. For instance, $4! = 4 \times 3 \times 2 \times 1 = 24$. The probability of success $p$ is the chance that you achieve an outcome once in one trial. For example, if you flip a fair coin, the probability of it coming up heads is one in two, or $p=0.5$.
+
+\begin{enumerate}
+    \item What are the parameters $p$, $k$, and $n$ for our horoscope experiment? Define all three in words, and give the numerical values for $p$ and $n$.
+    \item What is the probability that you would choose zero, one, two or three correct horoscopes by guessing at random? What parameter are you varying here?
+    \item Plot your results for the previous questions---that is, plot $P(k \mid n,p)$ versus $k$.
+    \item How many did you actually get? Comparing with your classmates, do your correct guess numbers follow the binomial distribution?
+    \item What do you conclude about the efficacy of horoscopes?
+\end{enumerate}
+
+\section{Homeopathy}
+Homeopathy is a pseudoscience that is enjoying a recent resurgence as a system of alternative medicine. It originated in 1796 by Samuel Hahnemann and essentially posits that various substances under extreme dilution in water or alcohol can cure ailments. Rejecting germ theory, homeopathy claims disease is caused by ``miasms'', which are ``peculiar morbid derangement of [the] vital force.'' It is particularly insidious as a pseudoscience since ``patients,'' like those of faith healers and other mystical doctors, frequently forgo actual medical treatment. Steve Jobs famously regretted delaying for nine months the start of established therapies for his pancreatic cancer in favor of acupuncture and herbal remedies, among other things.
+
+Homeopathy asserts that higher dilutions of ingredients have higher ``potency'' (greater effectiveness). The dilutions homeopaths use are often measured on a logarithmic scale, where each value is diluted by a factor of 10 from the one before it. This is the ``X'' scale: a 1X dilution is a 1:10 dilution, a 6X dilution is a $1:10^6$ dilution, and so on. A $1:10^6$ dilution of spit, for example, is 1 part spit in $10^6$ parts solvent (usually water). Some homeopaths use a logarithmic centennial scale, the ``C'' scale, where each value is diluted by a factor of 100 from the one before it. A 1C dilution is a 1:100 ratio of ingredient to water, a 3C solution is diluted by a factor of $10^{-6}$, and so on.
+
+\begin{enumerate}
+    \item A 30C (60X) solution was advocated frequently by Hahnemann. What fraction of the dose will be the active ingredient?
+    \item The homeopathic flu remedy Oscillococcinum is diluted to 200C. There are $\sim 10^{80}$ atoms in the observable universe. How many observable universes are required to find one molecule of duck liver, the active ingredient?
+    \item Do you find it plausible that homeopathic remedies outperform placebos?
+\end{enumerate}
+
+One of our TAs went down to the corner pharmacy (at 120th and Amsterdam) and sure enough, there were plenty of homeopathic remedies nestled between actual medicines.
+
+\subsection*{Product Label Case Studies}
+\textbf{Case Study 1: Homeopathic Allergy Remedy}
+\begin{itemize}[noitemsep]
+    \item \textbf{Active Ingredients HPUS:} Allium cepa 8X (Onion), Arsenicum album 8X (Arsenous oxide), Nux vomica 8X (Poison nut), Euphrasia officinalis 8X (Eyebright), Sabadilla 8X (Cevadilla), Sticta pulmonaria 8X (Lungwort), Aralia racemosa 8X (Spikenard), Cuprum metallicum 8X (Metallic copper).
+    \item \textit{Disclaimer:} ``These claims have not been reviewed by the Food and Drug Administration. They are based on traditional homeopathic practice.''
+\end{itemize}
+
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item Let's do a fun little comparison. The EPA has set the allowable concentration of arsenic in drinking water at 0.010 parts per million. How does the concentration of arsenic in your water compare to the concentration of onion, poison nut, etc. in this homeopathic remedy?
+\end{enumerate}
+
+\textbf{Case Study 2: Auro Earache Relief}
+\begin{itemize}[noitemsep]
+    \item \textit{Warning Notice:} ``Homeopathic drug products are required by law to conform to the Homeopathic Pharmacopeia of the United States (HPUS). They are not subject to a premarket approval process.''
+\end{itemize}
+
+The HPUS is the result of the Federal Food, Drug, \& Cosmetic Act of 1938, which created several loopholes in the normal drug-approval process that allow homeopathic remedies to forgo the normal FDA drug approval process. According to the FDA, ``a product's compliance with the requirements of the HPUS, USP, or NF does not establish that it has been shown by appropriate means to be safe, effective, and not misbranded for its intended use.'' \textit{(Source: CPG Sec. 400.400: Conditions Under Which Homeopathic Drugs May be Marketed, fda.gov)}
+
+\begin{itemize}
+    \item Discuss with your classmates and reflect on the implications of this policy.
+\end{itemize}
+
+Perhaps not surprisingly, there are many that take issue with the current US policy on homeopathic remedies. In 2011, a class action lawsuit was filed against Boiron, Inc., the company that sells a brand of the homeopathic flu treatment Oscillococcinum (Oscillo) that we examined above. The company was charged with false advertising, making misleading claims, etc. Oscillococcinum does not outperform placebo in scientific trials, and duck liver (the active ingredient) has no scientifically verified medical properties. The case settled out of court, with no admission of wrongdoing from Boiron. Asked whether Oscillo is safe, Boiron spokesperson Gina Casey replied ``Of course it is safe. There's nothing in it.'' \textit{(Sources: US News \& World Report, Top Class Actions)}
+
+\begin{itemize}
+    \item What do you think public policy on homeopathic remedies should be? Is it okay as is, or should it be changed? Why?
+    \item A 6-pack of Oscillococcinum pills is currently \$14.49 on the Walgreens website. What are the ethical implications of selling a \$14.49 pack of sugar pills?
+\end{itemize}
+
+\section*{Conclusion}
+
+\subsubsection*{For discussion:}
+\begin{itemize}
+    \item Given all that we have discussed, why do you think people believe in pseudoscience? Why might it be difficult to dissuade people of their pseudoscientific beliefs?
+    \item What does the opening quote (right under the title) have to do with our discussion today?
+\end{itemize}
+
+\subsubsection*{Answer in your notebook:}
+\begin{enumerate}
+    \item How can you distinguish between science and pseudoscience in your everyday life?
+    \item What are some instances in which you might have to?
+   
+    \item What is a question or comment you have about today's lab?
+\end{enumerate}
+
+\end{document}
